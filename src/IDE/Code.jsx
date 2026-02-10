@@ -1,5 +1,5 @@
 import Editor from './Editor'
-import Output from './output'
+import Output from './Output'
 import '../App.css'
 const Code = () => {
     return (
