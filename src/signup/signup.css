@@ -1,0 +1,119 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #121212;
+    color: #fff;
+    min-height: 100vh;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.signup {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 16px;
+}
+
+/* Form */
+form {
+    width: 100%;
+    max-width: 500px;
+    background-color: #1e1e1e;
+    padding: 32px;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 255, 128, 0.1);
+}
+
+/* Heading */
+form h3 {
+    text-align: center;
+    margin-bottom: 24px;
+    font-size: 1.6rem;
+    color: #9fef00;
+}
+
+/* Labels */
+form label {
+    display: block;
+    margin-bottom: 6px;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+/* Inputs */
+form input {
+    width: 100%;
+    border: none;
+    padding: 12px;
+    margin-bottom: 18px;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+form input:hover,
+form input:focus {
+    outline: none;
+    border: 1.5px solid #9fef00;
+    transition: 0.2s ease;
+}
+
+form input::placeholder {
+    font-style: italic;
+}
+
+/* Button */
+form button {
+    width: 100%;
+    padding: 10px;
+    font-size: 1.1rem;
+    background: #9fef00;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+form button:hover {
+    background-color: #c1ff33;
+}
+
+/* =========================
+   📱 Mobile (≤ 480px)
+   ========================= */
+@media (max-width: 480px) {
+    .signup {
+        padding: 20px 12px;
+    }
+
+    form {
+        padding: 24px;
+    }
+
+    form h3 {
+        font-size: 1.4rem;
+    }
+
+    form label {
+        font-size: 0.95rem;
+    }
+
+    form button {
+        font-size: 1rem;
+    }
+}
+
+/* =========================
+   💻 Large Screens (≥ 1024px)
+   ========================= */
+@media (min-width: 1024px) {
+    form {
+        max-width: 550px;
+    }
+
+    form h3 {
+        font-size: 1.8rem;
+    }
+}
