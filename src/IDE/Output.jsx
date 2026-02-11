@@ -7,7 +7,7 @@ import '../App.css';
 const Output = () => {
 
   const naviagte = useNavigate()
-  const { selectedlang, selectedver, codeValue } = useContext(ApiContext);
+  const { selectedlang, selectedver, codeValue, setCodeValue } = useContext(ApiContext);
 
   const [outputValue, setOutputValue] = useState('');
   const handleOutput = async () => {
@@ -28,6 +28,7 @@ const Output = () => {
   const handleLogout = () => {
     localStorage.removeItem('Tokens');
     naviagte('/login')
+    setCodeValue("")
 
   }
   return (
