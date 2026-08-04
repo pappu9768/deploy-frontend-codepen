@@ -161,3 +161,53 @@
     font-size: 13px;
   }
 }
+
+/*--------------------------------
+              Navbar
+----------------------------------*/
+
+
+.navbar {
+  height: 70px;
+  background: #1e1e2f;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 40px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+}
+
+.logo-icon {
+  font-size: 24px;
+  color: #61dafb;
+  font-weight: bold;
+}
+
+.logo h2 {
+  font-size: 24px;
+  color: #61dafb;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: white;
+  font-size: 17px;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #61dafb;
+}
